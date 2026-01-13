@@ -5,7 +5,7 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 import pandas as pd
 
 import os
-API_TOKEN = os.getenv("8139052926:AAE6sy5LI6aovGvblzABHbuA_4Iau4QvVvQ")
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=MemoryStorage())
@@ -140,3 +140,4 @@ async def search_item(message: types.Message, state: FSMContext):
 # ===== ЗАПУСК =====
 if __name__ == "__main__":
     executor.start_polling(dp)
+
